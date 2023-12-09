@@ -1,0 +1,107 @@
+<html>
+
+<head>
+    <title>Currency Converter</title>
+    <script>
+        function f3() {
+            let num = document.getElementById('num').value
+            let number = parseFloat(num);
+            let selectCurr = document.getElementById('Currency').value
+            let converCurr = document.getElementById('Currency2').value
+            let ans
+            let result
+            if (selectCurr == 'yen') {
+                ans = {
+                    'euro': 0.0064,
+                    'pound': 0.0055,
+                    'rupee': 0.58,
+                    'dollar': 0.0069
+                }
+                // ans = number * 0.58
+            } else if (selectCurr == 'dollar') {
+                ans = {
+                    'euro': 0.0064,
+                    'pound': 0.0055,
+                    'rupee': 0.58,
+                    'yen': 0.0069
+                }
+            } else if (selectCurr == 'rupee') {
+                ans = {
+                    'euro': 0.0064,
+                    'pound': 0.0055,
+                    'dollar': 0.58,
+                    'yen': 0.0069
+                }
+            } else if (selectCurr == 'euro') {
+                ans = {
+                    'dollar': 0.0064,
+                    'pound': 0.0055,
+                    'rupee': 0.58,
+                    'yen': 0.0069
+                }
+            } else if (selectCurr == 'pound') {
+                ans = {
+                    'euro': 0.0064,
+                    'dollar': 0.0055,
+                    'rupee': 0.58,
+                    'yen': 0.0069
+                }
+            }
+
+
+            result = num * ans[converCurr]
+            if (converCurr == selectCurr) {
+                result = num
+            }
+            document.getElementById("OutputCurr").innerHTML = result
+        }
+
+        function f5() {
+            console.log('ghasd')
+            let vid = document.getElementById("myVideo");
+            vid.autoplay = true;
+            vid.load();
+        }
+    </script>
+</head>
+
+
+
+
+
+
+
+
+
+<body>
+    <div>
+        <p>Enter number</p>
+        From : <input type="text" id="num">
+        <select id="Currency">
+            <option value="dollar">dollar</option>
+            <option>yen</option>
+            <option value="rupee">rupee</option>
+            <option value="pound">pound</option>
+            <option value="euro">euro</option>
+        </select>
+        <br>
+        To : <select name="" id="Currency2" onchange="f3()">
+            <option value="dollar">dollar</option>
+            <option>yen</option>
+            <option value="rupee">rupee</option>
+            <option value="pound">pound</option>
+            <option value="euro">euro</option>
+        </select>
+        <br>
+
+        ANSWER IS : <p id="OutputCurr"></p>
+
+    </div>
+    <div>
+        <video width="320" height="240" autoplay>
+            <source src="Can Robert Pattinson Have Children_.mp4" type="video/mp4">
+        </video>
+    </div>
+</body>
+
+</html>

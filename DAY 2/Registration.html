@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <title>New User Registration</title>
+    <style>
+        #bodyparent {
+            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnfF1HUKHn9odClX2Km-BJe30JAvn0mlcwU65hKkVmTroGTDYQYKk2A2ovxPvyEjCINxI&usqp=CAU');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+
+        #divparent {
+            background-color: white;
+            width: 320px;
+            height: 400px;
+            padding: 10px;
+            border: 1px solid white;
+            position: absolute;
+            left: 350px;
+            top: 100px;
+            border-radius: 15px;
+            color: black;
+        }
+    </style>
+    <script>
+        function f1() {
+            let inputfn = document.getElementById('Firstname').value;
+            let inputln = document.getElementById('Lastname').value
+            let inputdob = document.getElementById('Dob').value
+            let inputadd = document.getElementById('Address').value
+
+            localStorage.setItem('fname', inputfn)
+            localStorage.setItem('lname', inputln)
+            localStorage.setItem('dob', inputdob)
+            localStorage.setItem('addr', inputadd)
+
+
+        }
+
+    </script>
+</head>
+
+<body id="bodyparent">
+    <div id="divparent">
+        <h3 align="center">Registration Form</h3>
+        <br>
+        Firstname : <input type="text" name="Firstname" id="Firstname">
+        <br>
+        <br>
+        Lastname : <input type="text" name="Lastname" id="Lastname">
+        <br>
+        <br>
+        Date of birth : <input type="date" id="Dob">
+        <br>
+        <br>
+        Address : <textarea rows="5" cols="5" id="Address"></textarea>
+        <br>
+        <br>
+        State : <select>
+            <option>Maharashtra</option>
+            <option value="">Gujrat</option>
+        </select>
+        <br>
+        <br>
+        Education : SSC<input type="checkbox"> HSC<input type="checkbox"> UG<input type="checkbox"> PG<input
+            type="checkbox">
+        Gender : male<input type="radio" name="no-repeat"> female<input type="radio" name="no-repeat">
+        <div align="center">
+            <a href="RegDetails.html">
+                <input type="button" value="Submit" onclick="f1()" />
+            </a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

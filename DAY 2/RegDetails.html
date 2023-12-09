@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <script>
+            function f2(){
+                let firname = localStorage.getItem("fname")
+                let lasname = localStorage.getItem('lname')
+                let datob = localStorage.getItem('dob')
+                let addre = localStorage.getItem('addr')
+                document.getElementById("Name").innerHTML = firname
+                document.getElementById("lasnme").innerHTML = lasname
+
+                document.getElementById("dateobir").innerHTML = datob
+                document.getElementById("addresss").innerHTML = addre
+
+            }
+        </script>
+    </head>
+    <body>
+      <p id="Name" ></p>
+      <p id="lasnme" ></p>
+      <p id="dateobir" ></p>
+      <p id="addresss" ></p>
+        <input type="button" value="display" onclick="f2()">
+    </body>
+</html>
+
