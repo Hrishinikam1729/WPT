@@ -9,7 +9,7 @@
             background-attachment: fixed;
             background-size: 100% 100%;
         }
-
+        
         #divparent {
             background-color: white;
             width: 320px;
@@ -37,35 +37,26 @@
 
 
         }
-
     </script>
 </head>
 
 <body id="bodyparent">
     <div id="divparent">
         <h3 align="center">Registration Form</h3>
+        <br> Firstname : <input type="text" name="Firstname" id="Firstname">
         <br>
-        Firstname : <input type="text" name="Firstname" id="Firstname">
+        <br> Lastname : <input type="text" name="Lastname" id="Lastname">
         <br>
+        <br> Date of birth : <input type="date" id="Dob">
         <br>
-        Lastname : <input type="text" name="Lastname" id="Lastname">
+        <br> Address : <textarea rows="5" cols="5" id="Address"></textarea>
         <br>
-        <br>
-        Date of birth : <input type="date" id="Dob">
-        <br>
-        <br>
-        Address : <textarea rows="5" cols="5" id="Address"></textarea>
-        <br>
-        <br>
-        State : <select>
+        <br> State : <select>
             <option>Maharashtra</option>
             <option value="">Gujrat</option>
         </select>
         <br>
-        <br>
-        Education : SSC<input type="checkbox"> HSC<input type="checkbox"> UG<input type="checkbox"> PG<input
-            type="checkbox">
-        Gender : male<input type="radio" name="no-repeat"> female<input type="radio" name="no-repeat">
+        <br> Education : SSC<input type="checkbox"> HSC<input type="checkbox"> UG<input type="checkbox"> PG<input type="checkbox"> Gender : male<input type="radio" name="no-repeat"> female<input type="radio" name="no-repeat">
         <div align="center">
             <a href="RegDetails.html">
                 <input type="button" value="Submit" onclick="f1()" />

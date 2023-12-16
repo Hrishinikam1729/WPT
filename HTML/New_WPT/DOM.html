@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red-color {
+            color: red;
+        }
+    </style>
+</head>
+<!--this querySelector() grabs only first element it seems to change-->
+
+<body>
+
+
+    <h3>Document Object Model</h3>
+
+    <div>
+        <p>Hey there!!</p>
+    </div>
+    <div>
+        <span>Hey Hrishi!!</span>
+        <p style="background-color: aqua;" class="red-color" id="p">You can do anything you want!!</p>
+    </div>
+    <script>
+        const value = prompt("Who are you", "Hrishi")
+        document.write(value)
+        const div = document.querySelector("div")
+        div.innerHTML = "<h1>Hacked!!!</h1>"
+        const p = document.querySelector('#p')
+            // p.innerHTML = "You can!!"
+
+        p.classList.remove("red-color")
+            // p.remove();
+    </script>
+
+</body>
+
+</html>

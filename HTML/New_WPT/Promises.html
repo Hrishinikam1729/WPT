@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Result</h3>
+    <script>
+        let a = 10;
+        let b = 20;
+
+        let Result = a + b
+
+        let resultFromServer = fetch("https://my-json-server.typicode.com/typicode/demo/posts");
+
+        console.log(Result)
+
+
+        //------------------------------------------------
+
+        fetch("https://my-json-server.typicode.com/typicode/demo/posts").then((data) => {
+                console.log(data.json());
+            })
+            .catch((error) => {
+                console.log(error)
+            });
+        console.log(Result);
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+</head>
+
+<body>
+    <h3>Document Object Model</h3>
+
+    <div class="block1">
+        <p><span>I will soon be a conversant web-developer!!</span></p>
+    </div>
+
+    <div class="block">
+        <p><span>I will enjoy my full-stack journey</span></p>
+    </div>
+
+    <div class="block1">
+        <p><span>First I need some experience</span></p>
+    </div>
+
+
+    <script>
+        const select = document.getElementsByClassName("block1")
+        for (let i = 0; i < select.length; i++) {
+            select.item(i).style.background = 'blue'
+        }
+    </script>
+</body>
+
+</html>

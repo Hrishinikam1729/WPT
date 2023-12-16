@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="div1">
+        <p id="ptag"><span>
+        hey there!!
+    </span></p>
+        <button id="clickButton">Click me</button>
+    </div>
+    <script>
+        const el = document.getElementById("clickButton")
+        const el1 = document.getElementById("ptag")
+        const divv1 = document.getElementById('div1')
+        el.addEventListener("click", () => {
+            if (el1.style.color === 'red') {
+                el1.style.color = 'blue'
+            } else {
+                el1.style.color = 'red'
+            }
+            // divv1.remove();
+        });
+    </script>
+
+</body>
+
+</html>
